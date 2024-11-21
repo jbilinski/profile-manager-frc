@@ -1,0 +1,21 @@
+# Ignore Cargo's output directory
+/frc-service/target
+
+# Ignore build artifacts
+**/*.rs.bk
+
+# Ignore IDE/editor specific files
+/.vscode/
+/.idea/
+/*.code-workspace
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore Docker-related files
+docker-compose.override.yml
