@@ -1,4 +1,4 @@
-use actix_web::{App, HttpServer};
+use actix_web::{web, App, HttpServer};
 use dotenv::dotenv;
 use std::env;
 use log::info;
@@ -8,6 +8,7 @@ mod handlers;
 mod models;
 mod routes;
 mod prompts;
+mod services;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
