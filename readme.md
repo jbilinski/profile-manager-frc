@@ -1,7 +1,8 @@
 # Focused Resume Creator (FRC)
-![GitHub issue custom search in repo](https://img.shields.io/github/issues-search/jbilinski/profile-manager-frc)
-[![License: MIT](https://img.shields.io/badge/License-MIT-success.svg?logo)
-{![App Version](https://img.shields.io/github/package-json/version/jbilinski/profile-manager-frc?label=version)
+![GitHub Issues](https://img.shields.io/github/issues/jbilinski/profile-manager-frc)
+![License: MIT](https://img.shields.io/badge/License-MIT-success.svg?logo)
+![Package Version](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fgithub.com%2Fjbilinski%2Fprofile-manager-frc%2Fraw%2Frefs%2Fheads%2Fmain%2Ffrc-service%2FCargo.toml&query=%24.package.version&label=version)
+
 
 The goal of this projcet is to build a job-targeted resume based on a source resume of all skills and experiance.  If the target job is not a good fit the resume will be incomplete and output will advise against submission 
 
@@ -39,7 +40,7 @@ BIND_PORT=website_bind_port_number (default 9086)
 
 ### Source and Research Credits
 - [JSON Resume](https://jsonresume.org) for the resume schema
-- [SFIA] (https://sfia-online.org/en/about-sfia) Skills Framework for the Information Age standard reference model
+- [SFIA](https://sfia-online.org/en/about-sfia) Skills Framework for the Information Age standard reference model
 - [references](docs/references.bib) formal citations
 - [Indeed posting template](https://www.indeed.com/hire/c/info/writing-a-job-posting-template-and-examples)
 - [Reading A Federal Job Posting (US GSA TTS)](https://tts.gsa.gov/join/federal-job-posting/)
@@ -59,5 +60,5 @@ BIND_PORT=website_bind_port_number (default 9086)
 
 
 ### License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
 
