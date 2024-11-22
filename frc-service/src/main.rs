@@ -33,7 +33,7 @@ async fn main() -> std::io::Result<()> {
 async fn fetch_and_generate_schema(url: &str) -> Result<String, Box<dyn std::error::Error>> {
     let jsonresume_schema = handlers::fetch_json_schema(url).await?;
     models::generate_struct_from_json(&jsonresume_schema);
-    Ok(jsonresume_schema)
+    Ok(jsonresume_schema.to_string())
 }
 
 async fn start_server(bind_address: &str, prompts: Prompts) -> std::io::Result<()> {
