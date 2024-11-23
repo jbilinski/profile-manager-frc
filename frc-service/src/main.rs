@@ -22,7 +22,8 @@ async fn main() -> std::io::Result<()> {
     info!("Starting server at {}", bind_address);
 
     let jsonresume_schema_url = "https://github.com/jsonresume/resume-schema/raw/refs/heads/master/schema.json";
-    let jsonresume_schema = fetch_and_generate_schema(jsonresume_schema_url).await?;
+    let jsonresume_schema = fetch_and_generate_schema(jsonresume_schema_url).await?
+    .map_err(|e| std::io::Error::new(std::io::ErrorKind::Other, e))?;
 
     let prompts = Prompts::load_from_file("frc-service/prompts.json")
         .expect("Failed to load prompts");
