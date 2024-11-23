@@ -4,7 +4,7 @@ use std::fs::File;
 use std::io::Read;
 use std::error::Error;
 
-#[derive(Clone)]
+#[derive(Deserialize, Clone)]
 pub struct Prompts {
     pub resume_prompt: String,
     // Add more prompts as needed
