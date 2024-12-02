@@ -10,6 +10,10 @@ The goal of this projcet is to build a job-targeted resume based on a source res
 - A JSON resume file
 - Personal physosophy and approach to work
 - A job description or URL to a job description
+  - look for some structured data
+    - [SEO model using JSON-LD](https://developers.google.com/search/docs/appearance/structured-data/job-posting)
+    - [Schema.org](https://schema.org/JobPosting)
+
 - Company values or URL to company values
 - Switch: 1:1 Qualification match
 - Switch: Termiology matching
